@@ -1,0 +1,119 @@
+/*
+#------------------------------------------------------------------------
+# Restaurant - April Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+/* Base elements and classes */
+html { border-bottom:1px solid transparent; min-height:100%; }
+body > div > footer,
+body > div > header,
+body > div > section,
+body > footer,
+body > header,
+body > section { /* class used in the full template-width containers */ clear: both; margin: 0 auto; }
+section#gkPageTop { overflow: visible; /* Necessary to make menu working */ width: 100%; /* Necessary to achieve full background width */ }
+#gkTop1,
+#gkTop2,
+#gkUser1,
+#gkUser2,
+#gkBottom1 { /* Positions blocks - clearing */ clear: both; }
+/* clearfix */
+footer:after,
+header:after,
+section:after,
+aside:after { clear: both; content: ""; display: table; }
+/* Columns */
+aside#gkLeft,
+aside#gkInset1,
+section#gkContent,
+section#gkComponentWrap,
+aside#gkInset2,
+aside#gkRight,
+#gkBanner1,
+#gkBanner2 { /* Main columns */ box-sizing: border-box; float: left; }
+#gkTop1 > div,
+#gkTop2 > div,
+#gkUser1 > div,
+#gkUser2 > div,
+#gkBottom1 > div,
+#gkBottom2 > div { /* Columns in the positions blocks */ box-sizing: border-box; float: left; }
+/* Columns - especially for the template equal columns */
+#gkPage > section.gkColumns { display: block; width: 100%; }
+#gkLeft,
+#gkContent,
+#gkRight { display: block; float: left!important; }
+/* other spaces */
+#gkPageTop + #gkTop1,
+#gkPageTop + #gkTop2 { margin-top: 120px; }
+#gkTop1 + #gkPage #gkContent,
+#gkTop2 + #gkPage #gkContent { margin-top: 90px; }
+#gkTop1 + #gkPage #gkLeft, 
+#gkTop1 + #gkPage #gkRight,
+#gkTop2 + #gkPage #gkLeft, 
+#gkTop2 + #gkPage #gkRight { padding-top: 36px; }
+/* Joomla columns */
+.cols-2 .column-1,
+.cols-2 .column-2 { width:50%; }
+.cols-3 .column-1,
+.cols-3 .column-2,
+.cols-3 .column-3 { float:left; width:33.3%; }
+.column-1,
+.column-2,
+.column-3 { box-sizing: border-box; float: left; }
+/* 
+
+Layout calculations 
+
+*/
+
+/* base spaces */
+body > div > footer,
+body > div > header,
+body > div > section,
+section#gkPage > section,
+section#gkContent > section,
+section#gkComponentWrap > section { /* top margins for containers */ margin-top: 34px; }
+body > footer:first-child,
+body > header:first-child,
+body > section:first-child,
+section#gkPage > section:first-child,
+section#gkContent > section:first-child,
+section#gkComponentWrap > section:first-child { margin-top: 0; }
+
+#gkPage > #gkTop1:first-child,
+#gkPage > #gkTop2:first-child { padding-top: 24px; }
+/* module spaces */
+.box,
+.box_text,
+.box_menu { margin-top:34px; }
+.box:first-child,
+.box_menu:first-child,
+.box_text:first-child { margin-top: 0!important; }
+#gkMainbody .box,
+#gkMainbody .box_text,
+#gkMainbody .box_menu { margin-top: 4px; }
+#gkContentTop { margin-top: 14px!important; }
+/* Layout columns */
+#gkLeft { padding: 0 34px 0 0; }
+#gkInset1 { padding-right: 34px; }
+#gkRight { padding: 0 0 0 34px; }
+#gkInset2 { padding-left: 34px; }
+.gkColLeft { padding-right: 20px; }
+.gkColRight { padding-left: 20px; }
+.gkColCenter { padding-left: 20px; padding-right: 20px; }
+
+/* Joomla columns */
+.cols-2 .column-1,
+.cols-3 .column-1 { padding-right: 30px; }
+.cols-2 .column-2,
+.cols-3 .column-3 { padding-left: 30px; }
+.cols-3 .column-2 { padding-left: 30px; padding-right: 30px; }
+/* columns fix */
+aside#gkLeft,
+aside#gkRight,
+#gkContent { overflow: hidden; }

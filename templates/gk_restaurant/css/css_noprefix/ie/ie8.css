@@ -1,0 +1,48 @@
+/*
+#------------------------------------------------------------------------
+# Restaurant - April Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+img {
+	zoom: 1!important;
+}
+
+.gkHeader > * {
+	filter: alpha(opacity=0);	
+}
+
+.gkHeader.loaded > * {
+	filter: alpha(opacity=100);	
+}
+
+.nspArt img:hover {
+	filter: alpha(opacity=85);	
+}
+
+#gkBg #gkContent:before { 
+	background: url('../../images/style1/paper.png') repeat-x 0 120px!important; 
+}
+
+.noclips #gkBg #gkContent:before { 
+	background: url('../../images/style1/paper.png') repeat-x 0 62px!important; 
+}
+
+.itemImageBlock {
+	width: 100%;
+}
+
+.k2LatestCommentsBlock .k2Avatar {
+	width: 50px;
+}
+
+.itemCommentsList .gkAvatar {
+	width: 50px;
+}
+.nspImageWrapper {
+	display: inline-block!important;
+}

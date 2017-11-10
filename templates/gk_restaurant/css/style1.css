@@ -1,0 +1,438 @@
+/*
+#------------------------------------------------------------------------
+# Restaurant -April Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+/* Style 1 */
+/* template.css */
+::selection {
+	background: #8fbe1d;
+}
+
+body {
+	background-image: url('../images/style1/bg_pattern.png');
+	background-color: #F9E0AA;
+}
+
+a {
+	color: #8fbe1d;
+}
+
+a:hover,a:active,a:focus {
+	color: #222;
+}
+
+#gkBg {
+	background-image: url('../images/style1/bg_image.jpg');
+}
+
+.nopicture #gkBg {
+	background: none !important;
+}
+
+#gkContent {
+	background-image: url('../images/style1/paper.png');
+}
+
+#gkContent:before {
+	background-image: url('../images/style1/clips.png'), url('../images/style1/clips.png'), url('../images/style1/paper.png');
+}
+
+.noclips #gkContent:before {
+	background-image: url('../images/style1/paper.png');
+}
+
+.nopaper #gkContent:before {
+	background-image: url('../images/style1/clips.png'), url('../images/style1/clips.png');
+}
+
+#gkTop1 + #gkPage #gkContent:before,#gkTop2 + #gkPage #gkContent:before {
+	background-image: url('../images/style1/paper.png');
+}
+
+#gkLogo.cssLogo {
+	background-image: url('../images/style1/logo.png');
+	margin-top: -4px;
+}
+
+#gkLogo.text {
+	color: #333;
+}
+
+#gkPageTop {
+	background: #fff;
+	border-top: 1px solid #e0dfdf;
+	border-bottom: 1px solid #e0dfdf;
+}
+
+#gkCart {
+	background-image: url('../images/style1/bg_cart.png');
+	color: #484848;
+	text-shadow: 1px 1px 0 #f4f0f0;
+}
+
+#gkCart a {
+	color: #cb4900;
+}
+
+#gkCart a:active,#gkCart a:focus,#gkCart a:hover {
+	color: #333;
+}
+
+.gkMenu > ul > li.login a {
+	background-image: url('../images/style1/menu_login_bg.png');
+}
+
+#gkTools a:hover {
+	border-color: #8fbe1d;
+}
+
+#gkBg > footer {
+	color: #888;
+	text-shadow: 1px 1px 0 #fff;
+	background-image: url('../images/style1/bg_underscore.png');
+}
+
+#gkBg > footer a {
+	color: #888;
+}
+
+#gkBg > footer a:active,#gkBg > footer a:focus,#gkBg > footer a:hover {
+	color: #444;
+}
+
+.box_menu {
+	background-image: url('../images/style1/bg_paper.png');
+}
+
+.box_menu ul li {
+	background-image: url('../images/style1/menu_separator_bg.png');
+}
+
+.box_menu ul li a:active,.box_menu ul li a:focus,.box_menu ul li a:hover,.box_menu ul li.current a,.box_menu ul li.activeCategory a {
+	background-image: url('../images/style1/menu_active.png');
+}
+
+.box.paper {
+	background-image: url('../images/style1/bg_paper.png');
+}
+
+.box.border {
+	border: 5px solid #ececec;
+}
+
+.box.transparent .header {
+	color: #484848;
+	text-shadow: 1px 1px 0 #fff;
+}
+
+.box.pattern {
+	background-image: url('../images/style1/bg_light_pattern.png');
+}
+
+.box.dark.pattern {
+	background-image: url('../images/style1/bg_dark_pattern.png');
+}
+
+.box.underscore .header {
+	background-image: url('../images/style1/bg_underscore.png');
+}
+
+.box.wood1 {
+	background-image: url('../images/style1/bg_wood1.jpg');
+}
+
+.box.wood2 {
+	background-image: url('../images/style1/bg_wood2.jpg');
+}
+
+.box.border {
+	border: 5px solid #ececec;
+}
+
+#gkBottom2 {
+	text-shadow: 1px 1px 0 #fff;
+	color: #a6a6a6;
+}
+
+#gkBottom2 .box,#gkBottom2 .box_menu,#gkBottom2 .box_text {
+	color: #828282;
+}
+
+#gkBottom2 .header {
+	color: #888;
+}
+
+#gkBottom2 a {
+	color: #686868;
+}
+
+#gkBottom2 a:active,#gkBottom2 a:focus,#gkBottom2 a:hover {
+	color: #8fbe1d;
+}
+
+.socialBlock {
+	border-top: 1px dashed #999;
+}
+
+/* menu.css */
+.gkMenu > ul > li > a {
+	color: #555;
+}
+
+.gkMenu > ul > li:hover > a,.gkMenu > ul > li:active > a,.gkMenu > ul > li:focus > a,.gkMenu > ul > li.active:hover > a,.gkMenu > ul > li.active:active > a,.gkMenu > ul > li.active:focus > a {
+	color: #8fbe1d;
+}
+
+.gkMenu > ul > li.active > a {
+	color: #8fbe1d;
+}
+
+.gkMenu > ul > li.login a {
+	color: #8fbe1d;
+}
+
+.gkMenu > ul > li.login a:active,.gkMenu > ul > li.login a:focus,.gkMenu > ul > li.login a:hover {
+	color: #555;
+}
+
+.gkMenu > ul div.childcontent-inner {
+	background: transparent url('../images/style1/bg_menu.png') no-repeat right bottom;
+	border-left: 1px solid #e0dfdf;
+	border-top: 1px solid #e0dfdf;
+}
+
+.gkMenu > ul div.childcontent a {
+	color: #555;
+}
+
+.gkMenu > ul div.childcontent li {
+	background-image: url('../images/style1/menu_separator_bg.png');
+}
+
+.gkMenu > ul div.childcontent small {
+	color: #a6a6a6;
+}
+
+.gkMenu > ul div.childcontent li.active > a,.gkMenu > ul div.childcontent li:hover > a,.gkMenu > ul div.childcontent li > a:hover {
+	color: #8fbe1d;
+}
+
+.gkMenu > ul div.childcontent header {
+	background-image: url('../../images/style1/menu_separator_bg.png');
+}
+
+.gkMenu > ul div.childcontent header a {
+	color: #8fbe1d;
+}
+
+/* joomla.css */
+button,input.button,a.button,span.button,button.button,div.button,input[type="submit"],input[type="button"],.pagenav-prev a,.pagenav-next a {
+	background: #8fbe1d;
+}
+
+th {
+	color: #8fbe1d;
+	border-bottom: 4px solid #8fbe1d;
+}
+
+article header h1 a:hover {
+	color: #8FBE1D;
+}
+
+.tip-title {
+	background: #8fbe1d;
+}
+
+#system-message dd {
+	background-image: url('../images/style1/bg_messages.jpg');
+
+	-webkit-box-shadow: 0 0 5px #888;
+	-moz-box-shadow: 0 0 5px #888;
+	box-shadow: 0 0 5px #888;
+	color: #333;
+}
+
+#system-message dd.error {
+	background-image: url('../images/style1/bg_messages.jpg');
+	color: #fff;
+}
+
+div.banneritem {
+	background-image: url('../images/style1/menu_separator_bg.png');
+}
+
+div.bannerfooter {
+	background-image: url('../images/style1/menu_separator_bg.png');
+}
+
+.pane-sliders .panel h3 {
+	color: #8fbe1d;
+	border-bottom: 3px solid #8fbe1d;
+}
+
+#article-index h3 {
+	color: #8fbe1d;
+}
+
+#article-index li {
+	background-image: url('../images/style1/menu_separator_bg.png');
+}
+
+#article-index li a.active {
+	color: #8fbe1d !important;
+}
+
+#article-index li a:hover {
+	color: #8fbe1d;
+}
+
+dl#tabs dt.tabs span h3 a,dl.tabs dt.tabs span h3 a {
+	border: 2px solid #8fbe1d;
+}
+
+dl#tabs dt.tabs h3:hover a,dl.tabs dt.tabs h3:hover a {
+	color: #8fbe1d;
+}
+
+dl#tabs dt.tabs.open a,dl.tabs dt.tabs.open a {
+	background: #8fbe1d;
+}
+
+.searchintro {
+	color: #8fbe1d;
+}
+
+.autocompleter-queried {
+	color: #8fbe1d !important;
+}
+
+/* gk_stuff.css */
+.dark.pattern .gkTab ul.gkTabs li.active {
+	background-image: url('../images/style1/bg_dark_pattern.png');
+}
+
+.nspBotInterface .nspPagination li:hover,.nspBotInterface .nspPagination li.active,.nspTopInterface .nspPagination li:hover,.nspTopInterface .nspPagination li.active {
+	background: #8fbe1d;
+}
+
+.nspBotInterface .nspPrev,.nspTopInterface .nspPrev,.nspBotInterface .nspNext,.nspTopInterface .nspNext {
+	background-image: url('../images/style1/nsp_interface.png');
+}
+
+.nspBotInterface .nspNext,.nspTopInterface .nspNext {
+	background-position: -12px 0;
+}
+
+.nspBotInterface .nspPrev,.nspTopInterface .nspPrev {
+	background-position: 0 0;
+}
+
+.nspBotInterface .nspPrev:hover,.nspTopInterface .nspPrev:hover {
+	background-position: 0 -17px;
+}
+
+.nspBotInterface .nspNext:hover,.nspTopInterface .nspNext:hover {
+	background-position: -12px -17px;
+}
+
+.dark .nspBotInterface .nspNext,.dark .nspTopInterface .nspNext {
+	background-position: -12px 0;
+}
+
+.dark .nspBotInterface .nspPrev,.dark .nspTopInterface .nspPrev {
+	background-position: 0 0;
+}
+
+.dark .nspBotInterface .nspPrev:hover,.dark .nspTopInterface .nspPrev:hover {
+	background-position: 0 -34px;
+}
+
+.dark .nspBotInterface .nspNext:hover,.dark .nspTopInterface .nspNext:hover {
+	background-position: -12px -34px;
+}
+
+.wood1 .nspBotInterface .nspPagination li:hover,.wood1 .nspBotInterface .nspPagination li.active,.wood1 .nspTopInterface .nspPagination li:hover,.wood1 .nspTopInterface .nspPagination li.active {
+	background: #8fbe1d;
+}
+
+.wood2 .nspBotInterface .nspPagination li:hover,.wood2 .nspBotInterface .nspPagination li.active,.wood2 .nspTopInterface .nspPagination li:hover,.wood2 .nspTopInterface .nspPagination li.active {
+	background: #8fbe1d;
+}
+
+.wood2 .nspBotInterface .nspNext,.wood2 .nspTopInterface .nspNext {
+	background-position: -12px -51px;
+}
+
+.wood2 .nspBotInterface .nspPrev,.wood2 .nspTopInterface .nspPrev {
+	background-position: 0 -51px;
+}
+
+.wood2 .nspBotInterface .nspPrev:hover,.wood2 .nspTopInterface .nspPrev:hover {
+	background-position: 0 -17px;
+}
+
+.wood2 .nspBotInterface .nspNext:hover,.wood2 .nspTopInterface .nspNext:hover {
+	background-position: -12px -17px;
+}
+
+.big .nspArt a:active,.big .nspArt a:focus,.big .nspArt a:hover {
+	color: #8fbe1d;
+}
+
+/* k2.css */
+.k2FeedIcon a,a.k2FeedIcon {
+	background-image: url('../images/style1/rss.png');
+}
+
+.k2FeedIcon a:hover,a:hover.k2FeedIcon {
+	color: #8FBE1D;
+}
+
+ul li.itemResizer a {
+	background-image: url('../images/style1/fonts.png');
+}
+
+ul li.itemResizer a:hover#fontDecrease {
+	background-position: 0 100%;
+}
+
+ul li.itemResizer #fontIncrease {
+	background-position: 100% 0;
+}
+
+ul li.itemResizer a:hover#fontIncrease {
+	background-position: 100% 100%;
+}
+
+ul li.itemComments a {
+	background-image: url('../images/style1/comment.png');
+}
+
+.itemRatingList,.itemRatingList a:hover,.itemRatingList .itemCurrentRating {
+	background-image: url('../images/style1/star.png');
+}
+
+.itemTags li a,.k2TagCloudBlock a {
+	background-image: url('../images/style1/tags.png');
+}
+
+.itemTags li a:hover,.k2TagCloudBlock a:hover {
+	background-image: url('../images/style1/tags.png');
+}
+
+.itemAuthorBlock {
+	background-image: url('../images/style1/bg_wood1.jpg');
+}
+
+.itemAuthorBlock > .gkAvatar {
+	background-image: url('../images/style1/author.png');
+}
+
+.box.k2CommentItem > a:hover {
+	color: #8FBE1D;
+}

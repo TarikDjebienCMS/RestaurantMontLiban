@@ -1,0 +1,433 @@
+/*
+#------------------------------------------------------------------------
+# Restaurant -April Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+/* Style 3 */
+/* template.css */
+::selection {
+	background: #a73030;
+}
+
+body {
+	background-image: url('../images/style3/bg_pattern.png');
+	color: #F9E0AA;
+}
+
+a {
+	color: #a73030;
+}
+
+a:hover,a:active,a:focus {
+	color: #222;
+}
+
+#gkBg {
+	background-image: none;
+}
+
+.nopicture #gkBg {
+	background: none !important;
+}
+
+#gkContent {
+	background-image: url('../images/style3/paper.png');
+}
+
+#gkContent:before {
+	background-image: url('../images/style3/clips.png'), url('../images/style3/clips.png'), url('../images/style3/paper.png');
+}
+
+.noclips #gkContent:before {
+	background-image: url('../images/style3/paper.png');
+}
+
+.nopaper #gkContent:before {
+	background-image: url('../images/style3/clips.png'), url('../images/style3/clips.png');
+}
+
+#gkTop1 + #gkPage #gkContent:before,#gkTop2 + #gkPage #gkContent:before {
+	background-image: url('../images/style3/paper.png');
+}
+
+#gkLogo.cssLogo {
+	background-image: url('../images/style3/logo.png');
+	margin-top: -7px;
+}
+
+#gkLogo.text {
+	color: #333;
+}
+
+#gkPageTop {
+	background: #151515;
+	border-top: 1px solid #262626;
+	border-bottom: 1px solid #262626;
+}
+
+#gkCart {
+	background-image: url('../images/style3/bg_cart.png');
+	color: #a9a7a7;
+	text-shadow: 1px 1px 0 #000;
+}
+
+#gkCart a {
+	color: #a73030;
+}
+
+#gkCart a:active,#gkCart a:focus,#gkCart a:hover {
+	color: #a9a7a7;
+}
+
+.gkMenu > ul > li.login a {
+	background-image: url('../images/style3/menu_login_bg.png');
+}
+
+#gkTools a:hover {
+	border-color: #a73030;
+}
+
+#gkBg > footer {
+	color: #a9a7a7;
+	text-shadow: 1px 1px 0 #000;
+	background-image: url('../images/style3/bg_underscore.png');
+}
+
+#gkBg > footer a {
+	color: #b9b7b7;
+}
+
+#gkBg > footer a:active,#gkBg > footer a:focus,#gkBg > footer a:hover {
+	color: #a73030;
+}
+
+.box_menu {
+	background-image: url('../images/style3/bg_paper.png');
+}
+
+.box_menu ul li {
+	background-image: url('../images/style3/menu_separator_bg.png');
+}
+
+.box_menu ul li a:active,.box_menu ul li a:focus,.box_menu ul li a:hover,.box_menu ul li.current a,.box_menu ul li.activeCategory a {
+	background-image: url('../images/style3/menu_active.png');
+}
+
+.box.paper {
+	background-image: url('../images/style3/bg_paper.png');
+}
+
+.box.border {
+	border: 5px solid #ececec;
+}
+
+.box.pattern {
+	background-image: url('../images/style3/bg_light_pattern.png');
+}
+
+.box.dark.pattern {
+	background-image: url('../images/style3/bg_dark_pattern.png');
+}
+
+.box.underscore .header {
+	background-image: url('../images/style3/bg_underscore.png');
+}
+
+.box.wood1 {
+	background-image: url('../images/style3/bg_wood1.jpg');
+}
+
+.box.wood2 {
+	background-image: url('../images/style3/bg_wood2.jpg');
+}
+
+.box.border {
+	border: 5px solid #474747;
+}
+
+#gkBottom2 {
+	text-shadow: 1px 1px 0 #000;
+	color: #a6a6a6;
+}
+
+#gkBottom2 .box,#gkBottom2 .box_menu,#gkBottom2 .box_text {
+	color: #a9a7a7;
+}
+
+#gkBottom2 .header {
+	color: #a9a7a7;
+}
+
+#gkBottom2 a {
+	color: #a73030;
+}
+
+#gkBottom2 a:active,#gkBottom2 a:focus,#gkBottom2 a:hover {
+	color: #b9b7b7;
+}
+
+.socialBlock {
+	border-top: 1px dashed #a9a7a7;
+}
+
+/* menu.css */
+.gkMenu > ul > li > a {
+	color: #e9e9e9;
+}
+
+.gkMenu > ul > li:hover > a,.gkMenu > ul > li:active > a,.gkMenu > ul > li:focus > a,.gkMenu > ul > li.active:hover > a,.gkMenu > ul > li.active:active > a,.gkMenu > ul > li.active:focus > a {
+	color: #a73030;
+}
+
+.gkMenu > ul > li.active > a {
+	color: #a73030;
+}
+
+.gkMenu > ul > li.login a {
+	color: #a73030;
+}
+
+.gkMenu > ul > li.login a:active,.gkMenu > ul > li.login a:focus,.gkMenu > ul > li.login a:hover {
+	color: #e9e9e9;
+}
+
+.gkMenu > ul div.childcontent-inner {
+	background: transparent url('../images/style3/bg_menu.png') no-repeat right bottom;
+	border-left: none;
+	border-top: none;
+}
+
+.gkMenu > ul div.childcontent a {
+	color: #e9e9e9;
+}
+
+.gkMenu > ul div.childcontent li {
+	background-image: url('../images/style3/main_menu_separator.png');
+}
+
+.gkMenu > ul div.childcontent small {
+	color: #c9c9c9;
+}
+
+.gkMenu > ul div.childcontent li.active > a,.gkMenu > ul div.childcontent li:hover > a,.gkMenu > ul div.childcontent li > a:hover {
+	color: #a73030;
+}
+
+.gkMenu > ul div.childcontent header {
+	background-image: none;
+}
+
+.gkMenu > ul div.childcontent header a {
+	color: #a73030;
+}
+
+/* joomla.css */
+button,input.button,a.button,span.button,button.button,div.button,input[type="submit"],input[type="button"],.pagenav-prev a,.pagenav-next a {
+	background: #a73030;
+}
+
+th {
+	color: #a73030;
+	border-bottom: 4px solid #a73030;
+}
+
+article header h1 a:hover {
+	color: #a73030;
+}
+
+.tip-title {
+	background: #a73030;
+}
+
+#system-message dd {
+	background-image: url('../images/style3/bg_messages.jpg');
+
+	-webkit-box-shadow: 0 0 5px #888;
+	-moz-box-shadow: 0 0 5px #888;
+	box-shadow: 0 0 5px #888;
+	color: #333;
+}
+
+#system-message dd.error {
+	background-image: url('../images/style3/bg_messages.jpg');
+	color: #fff;
+}
+
+div.banneritem {
+	background-image: url('../images/style3/menu_separator_bg.png');
+}
+
+div.bannerfooter {
+	background-image: url('../images/style3/menu_separator_bg.png');
+}
+
+.pane-sliders .panel h3 {
+	color: #a73030;
+	border-bottom: 3px solid #a73030;
+}
+
+#article-index h3 {
+	color: #a73030;
+}
+
+#article-index li {
+	background-image: url('../images/style3/menu_separator_bg.png');
+}
+
+#article-index li a.active {
+	color: #a73030 !important;
+}
+
+#article-index li a:hover {
+	color: #a73030;
+}
+
+dl#tabs dt.tabs span h3 a,dl.tabs dt.tabs span h3 a {
+	border: 2px solid #a73030;
+}
+
+dl#tabs dt.tabs h3:hover a,dl.tabs dt.tabs h3:hover a {
+	color: #a73030;
+}
+
+dl#tabs dt.tabs.open a,dl.tabs dt.tabs.open a {
+	background: #a73030;
+}
+
+.searchintro {
+	color: #a73030;
+}
+
+.autocompleter-queried {
+	color: #a73030 !important;
+}
+
+/* gk_stuff.css */
+.dark.pattern .gkTab ul.gkTabs li.active {
+	background-image: url('../images/style3/bg_dark_pattern.png');
+}
+
+.nspBotInterface .nspPagination li:hover,.nspBotInterface .nspPagination li.active,.nspTopInterface .nspPagination li:hover,.nspTopInterface .nspPagination li.active {
+	background: #a73030;
+}
+
+.nspBotInterface .nspPrev,.nspTopInterface .nspPrev,.nspBotInterface .nspNext,.nspTopInterface .nspNext {
+	background-image: url('../images/style3/nsp_interface.png');
+}
+
+.nspBotInterface .nspNext,.nspTopInterface .nspNext {
+	background-position: -12px 0;
+}
+
+.nspBotInterface .nspPrev,.nspTopInterface .nspPrev {
+	background-position: 0 0;
+}
+
+.nspBotInterface .nspPrev:hover,.nspTopInterface .nspPrev:hover {
+	background-position: 0 -17px;
+}
+
+.nspBotInterface .nspNext:hover,.nspTopInterface .nspNext:hover {
+	background-position: -12px -17px;
+}
+
+.dark .nspBotInterface .nspNext,.dark .nspTopInterface .nspNext {
+	background-position: -12px 0;
+}
+
+.dark .nspBotInterface .nspPrev,.dark .nspTopInterface .nspPrev {
+	background-position: 0 0;
+}
+
+.dark .nspBotInterface .nspPrev:hover,.dark .nspTopInterface .nspPrev:hover {
+	background-position: 0 -34px;
+}
+
+.dark .nspBotInterface .nspNext:hover,.dark .nspTopInterface .nspNext:hover {
+	background-position: -12px -34px;
+}
+
+.wood1 .nspBotInterface .nspPagination li:hover,.wood1 .nspBotInterface .nspPagination li.active,.wood1 .nspTopInterface .nspPagination li:hover,.wood1 .nspTopInterface .nspPagination li.active {
+	background: #a73030;
+}
+
+.wood2 .nspBotInterface .nspPagination li:hover,.wood2 .nspBotInterface .nspPagination li.active,.wood2 .nspTopInterface .nspPagination li:hover,.wood2 .nspTopInterface .nspPagination li.active {
+	background: #a73030;
+}
+
+.wood2 .nspBotInterface .nspNext,.wood2 .nspTopInterface .nspNext {
+	background-position: -12px -51px;
+}
+
+.wood2 .nspBotInterface .nspPrev,.wood2 .nspTopInterface .nspPrev {
+	background-position: 0 -51px;
+}
+
+.wood2 .nspBotInterface .nspPrev:hover,.wood2 .nspTopInterface .nspPrev:hover {
+	background-position: 0 -17px;
+}
+
+.wood2 .nspBotInterface .nspNext:hover,.wood2 .nspTopInterface .nspNext:hover {
+	background-position: -12px -17px;
+}
+
+.big .nspArt a:active,.big .nspArt a:focus,.big .nspArt a:hover {
+	color: #a73030;
+}
+
+/* k2.css */
+.k2FeedIcon a,a.k2FeedIcon {
+	background-image: url('../images/style3/rss.png');
+}
+
+.k2FeedIcon a:hover,a:hover.k2FeedIcon {
+	color: #a73030;
+}
+
+ul li.itemResizer a {
+	background-image: url('../images/style3/fonts.png');
+}
+
+ul li.itemResizer a:hover#fontDecrease {
+	background-position: 0 100%;
+}
+
+ul li.itemResizer #fontIncrease {
+	background-position: 100% 0;
+}
+
+ul li.itemResizer a:hover#fontIncrease {
+	background-position: 100% 100%;
+}
+
+ul li.itemComments a {
+	background-image: url('../images/style3/comment.png');
+}
+
+.itemRatingList,.itemRatingList a:hover,.itemRatingList .itemCurrentRating {
+	background-image: url('../images/style3/star.png');
+}
+
+.itemTags li a,.k2TagCloudBlock a {
+	background-image: url('../images/style3/tags.png');
+}
+
+.itemTags li a:hover,.k2TagCloudBlock a:hover {
+	background-image: url('../images/style3/tags.png');
+}
+
+.itemAuthorBlock {
+	background-image: url('../images/style3/bg_wood1.jpg');
+}
+
+.itemAuthorBlock > .gkAvatar {
+	background-image: url('../images/style3/author.png');
+}
+
+.box.k2CommentItem > a:hover {
+	color: #a73030;
+}

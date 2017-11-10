@@ -1,0 +1,220 @@
+/*
+#------------------------------------------------------------------------
+# Restaurant - April Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+/*
+ * Tabs Module 
+ */
+
+.gkTab { position: relative; margin: -24px; }
+.gkTabWrap { margin: 0 auto; }
+.gkTab ul.gkTabs { height: 44px; background: #f3f3f3; padding: 8px 16px 0 16px; }
+.gkTab ul.gkTabs li { float: left; padding: 0 14px!important; height: 44px; line-height: 45px!important; list-style-type:none; background: none; color: #aaa; font-size: 18px; border: none; cursor: pointer; }
+.gkTab ul.gkTabs li span { display: block; }
+.gkTab ul.gkTabs li:hover { color: #555; }
+.gkTab ul.gkTabs li.active { color: #555; background: #fff; }
+.gkTabContainer0 { clear: both; margin:0; }
+.gkTabContainer1 { overflow: hidden; }
+.gkTabItem { float: left; overflow: hidden; padding: 0; }
+.gkTabButtonNext,
+.gkTabButtonPrev { display: none; }
+.gkTabContainer0,
+.gkTabContainer1,
+.gkTabContainer2 { position:relative; }
+.gkTabItem { position: absolute; left: -999em; top: 0; width: 100%; }
+.gkTabItem.active { position: static; left: 0; }
+.gkTabItemSpace { padding: 24px; }
+/* dark suffix */
+.dark .gkTab ul.gkTabs { background: #1c1c1c; }
+.dark .gkTab ul.gkTabs li { color: #ccc; }
+.dark .gkTab ul.gkTabs li:hover { color: #d1c5a1; }
+.dark .gkTab ul.gkTabs li.active { color: #d1c5a1; background: #282828; }
+.dark.pattern .gkTab ul.gkTabs li.active { background: transparent url('../images/style1/bg_dark_pattern.png') repeat 0 0; } 
+#gkContent .gkTab { margin: 0!important; }
+
+/* 
+ * News Show Pro GK4
+ */
+ 
+.nsp { position: relative; } 
+.nspMain { overflow:hidden; }
+/* interface */
+.nspBotInterface,
+.nspTopInterface { overflow:hidden; width:auto; margin: 0; }
+.nspBotInterface { margin:0; padding: 5px 0 0 0; }
+.nspTopInterface div { position: absolute; right: 20px; padding:0 3px; }
+.nspBotInterface div { float: right; margin-top: 2px; }
+#gkContent .nspTopInterface div { top: 28px!important; }
+/* pagination */
+.nspBotInterface .nspPagination li,
+.nspTopInterface .nspPagination li,
+.nspBotInterface .nspPagination li.active,
+.nspTopInterface .nspPagination li.active { display:block; float:left; border: none!important; width: 13px; height: 13px; margin: 0 4px 0 0!important; padding:0 !important; background: #dedede; text-indent: -999px!important; cursor:pointer; overflow: hidden; border-radius: 50%; }
+.nspBotInterface .nspPagination li:hover,
+.nspBotInterface .nspPagination li.active,
+.nspTopInterface .nspPagination li:hover,
+.nspTopInterface .nspPagination li.active { background: #8fbe1d; cursor:pointer; }
+.nspTopInterface .nspPagination,
+.nspBotInterface .nspPagination { border:none !important; float:left; width:auto; padding: 0!important; list-style-type:none; margin:3px 0 0 0; }
+.nspBotInterface .nspCounter,
+.nspTopInterface .nspCounter { padding:4px 8px!important; font-size:10px; font-weight:normal !important; height:10px; line-height:10px; background:transparent; color:#ccc !important; cursor:pointer; float:left; margin: 0 0 0 8px !important; }
+.nspBotInterface .nspCounter span,
+.nspTopInterface .nspCounter span { color:#dfdfdf !important; }
+/* buttons: prev & next */
+.nspBotInterface,
+.nspTopInterface { margin: 0!important; }
+.nspTopInterface div { top: 32px!important; }
+.nspBotInterface .nspPrev,
+.nspTopInterface .nspPrev,
+.nspBotInterface .nspNext,
+.nspTopInterface .nspNext { display: block; float:left; border: none!important; height: 17px; width: 12px; margin: 1px 0 0 2px; background: transparent url('../images/style1/nsp_interface.png') no-repeat 0 0; cursor:pointer; text-indent: 999px; padding:0 !important; overflow: hidden; }
+.nspBotInterface .nspNext,
+.nspTopInterface .nspNext { background-position: -12px 0; }
+.nspBotInterface .nspPrev,
+.nspTopInterface .nspPrev { background-position: 0 0; margin-left: 4px; }
+.nspBotInterface .nspPrev:hover,
+.nspTopInterface .nspPrev:hover { background-position: 0 -17px; }
+.nspBotInterface .nspNext:hover,
+.nspTopInterface .nspNext:hover { background-position: -12px -17px; }
+/* article layout */
+.nspArts { overflow:hidden; }
+.nspArt > div { overflow:hidden; padding:0 10px; font-size: 13px; border-bottom: 1px solid #e5e5e5; }
+.nspArt .nspHeader { font-size: 18px; line-height:1.2; margin-bottom: 5px; }
+.nspArt .nspImageWrapper { border: none; box-shadow: none; padding: 0; background: #fff; overflow: hidden; display: inline-block; line-height: 1px; }
+.nspArt img { transition: all 0.4s ease; }
+.nspArt .nspImageWrapper:hover img { transform: scale(1.2) rotate(-7deg); }
+.nspLinks h4 a { }
+.nspLinks h4 a:hover,
+.nspArt h4.nspHeader a:hover { }
+.nspArt p.nspText { margin: 0!important; line-height: 1.4; }
+.nspArt p.nspInfo { font-size:11px; margin:6px 0; }
+.nspArt .tleft { text-align:left; }
+.nspArt .tright { text-align:right; }
+.nspArt .tcenter { text-align:center; }
+.nspArt .tjustify { text-align:justify; }
+.nspArt .fleft { float:left; }
+.nspArt .fright { float:right; }
+.nspArt .fnone { clear:both; width:100%; float:none; }
+.nspArt { float:left; }
+.nspReadon_class.left,
+.nspReadon_class.right,
+.nspReadon_class.center { clear:both; }
+.nspReadon_class.left { float:left; }
+.nspReadon_class.right { float:right; }
+.nspReadon_class.center { display:inline; float:none; }
+.nspLinks > div.nspLinkScroll1 > div > ul li { list-style-type: none!important; background: none!important; padding-left: 0!important; margin: 0!important; margin-right: 0!important; }
+.nspLinks > div.nspLinkScroll1 > div > ul li:first-child { padding-top: 0px }
+.nspLinks ul li h4 { margin-bottom: 6px; font-size:15px; line-height:1.2!important;  }
+.nspLinks ul li p { margin:0; font-size:12px; line-height: 130% }
+.nspLinks > div.nspLinkScroll1 > div > ul li { margin:0; padding: 10px 0; height:auto; border-bottom:none; }
+.nspLinks > div.nspLinkScroll1 > div > ul { padding:0; margin:0; list-style-type:none!important; clear:none!important; }
+.nspArts.left { float:right; text-align:inherit!important; }
+.nspLinksWrap.left { float:left; text-align:inherit!important; }
+.nspArts.right { float:left; text-align:inherit!important; }
+.nspLinksWrap.right { float:right; text-align:inherit!important; }
+.nspMain .unvisible { height:1px; left:-10000px; overflow:hidden; position:absolute; top:auto; width:1px; }
+.nspAvatar { margin-bottom:-5px; }
+.nspArt .nspReadon { margin-top: 14px; }
+.nspText .readon { display: inline!important; float: none!important; }
+/* dark suffix */
+.dark .nspArt a { color: #d1c5a1!important; }
+.dark .nspArt a:active,
+.dark .nspArt a:focus,
+.dark .nspArt a:hover { color: #fff!important; }
+.dark .nspArt > div { border-bottom: 1px solid #4a4a4a; }
+.dark.big .nspArt .nspImageWrapper { border: 5px solid #282828; box-shadow: 0 0 1px #111; background: #282828; }
+.dark .nspBotInterface .nspPagination li,
+.dark .nspTopInterface .nspPagination li,
+.dark .nspBotInterface .nspPagination li.active,
+.dark .nspTopInterface .nspPagination li.active { background: #dedede; }
+.dark .nspBotInterface .nspPagination li:hover,
+.dark .nspBotInterface .nspPagination li.active,
+.dark .nspTopInterface .nspPagination li:hover,
+.dark .nspTopInterface .nspPagination li.active { background: #d1c5a1; }
+.dark .nspBotInterface .nspNext,
+.dark .nspTopInterface .nspNext { background-position: -12px 0; }
+.dark .nspBotInterface .nspPrev,
+.dark .nspTopInterface .nspPrev { background-position: 0 0; }
+.dark .nspBotInterface .nspPrev:hover,
+.dark .nspTopInterface .nspPrev:hover { background-position: 0 -34px; }
+.dark .nspBotInterface .nspNext:hover,
+.dark .nspTopInterface .nspNext:hover { background-position: -12px -34px; }
+
+/* wood1 suffix */
+.wood1 .nspArt,
+.wood1 .nspText { color: #fff!important; text-shadow: 1px 1px 2px #98784b!important; }
+.wood1 .nspArt a { color: #484848!important; }
+.wood1 .nspHeader { text-shadow: 1px 1px 0 #f5d6a6!important; }
+.wood1 .nspHeader:hover { text-shadow: 1px 1px 0 #98784b!important; }
+.wood1 .nspHeader a:hover { text-decoration:none!important; }
+.wood1 .nspArt a:active,
+.wood1 .nspArt a:focus,
+.wood1 .nspArt a:hover { color: #fff!important; text-decoration: underline; }
+.wood1 .nspArt > div { border-bottom: 1px solid #98784b; }
+.wood1.big .nspArt .nspImageWrapper { box-shadow: 0 0 1px #98784b; }
+.wood1 .nspBotInterface .nspPagination li,
+.wood1 .nspTopInterface .nspPagination li,
+.wood1 .nspBotInterface .nspPagination li.active,
+.wood1 .nspTopInterface .nspPagination li.active { background: #fff; }
+.wood1 .nspBotInterface .nspPagination li:hover,
+.wood1 .nspBotInterface .nspPagination li.active,
+.wood1 .nspTopInterface .nspPagination li:hover,
+.wood1 .nspTopInterface .nspPagination li.active { background: #8fbe1d; }
+.wood1 .nspBotInterface .nspNext,
+.wood1 .nspTopInterface .nspNext { background-position: -12px -51px; }
+.wood1 .nspBotInterface .nspPrev,
+.wood1 .nspTopInterface .nspPrev { background-position: 0 -51px; }
+.wood1 .nspBotInterface .nspPrev:hover,
+.wood1 .nspTopInterface .nspPrev:hover { background-position: 0 -17px; }
+.wood1 .nspBotInterface .nspNext:hover,
+.wood1 .nspTopInterface .nspNext:hover { background-position: -12px -17px; }
+
+/* wood2 suffix */
+.wood2 .nspArt,
+.wood2 .nspText { color: #ddc7b0!important; text-shadow: 1px 1px 2px #98784b!important; }
+.wood2 .nspArt a { color: #fff!important; }
+.wood2 .nspArt a:active,
+.wood2 .nspArt a:focus,
+.wood2 .nspArt a:hover { color: #fff!important; text-decoration: underline; }
+.wood2 .nspArt > div { border-bottom: 1px solid #98784b; }
+.wood2.big .nspArt .nspImageWrapper { box-shadow: 0 0 1px #98784b; }
+.wood2 .nspBotInterface .nspPagination li,
+.wood2 .nspTopInterface .nspPagination li,
+.wood2 .nspBotInterface .nspPagination li.active,
+.wood2 .nspTopInterface .nspPagination li.active { background: #fff; }
+.wood2 .nspBotInterface .nspPagination li:hover,
+.wood2 .nspBotInterface .nspPagination li.active,
+.wood2 .nspTopInterface .nspPagination li:hover,
+.wood2 .nspTopInterface .nspPagination li.active { background: #8fbe1d; }
+.wood2 .nspBotInterface .nspNext,
+.wood2 .nspTopInterface .nspNext { background-position: -12px -51px; }
+.wood2 .nspBotInterface .nspPrev,
+.wood2 .nspTopInterface .nspPrev { background-position: 0 -51px; }
+.wood2 .nspBotInterface .nspPrev:hover,
+.wood2 .nspTopInterface .nspPrev:hover { background-position: 0 -17px; }
+.wood2 .nspBotInterface .nspNext:hover,
+.wood2 .nspTopInterface .nspNext:hover { background-position: -12px -17px; }
+
+/* big suffix */
+.big .nspHeader { color: #555; font-size: 36px; }
+.big .nspText { color: #777; font-size: 15px; }
+.big .header { margin-bottom: 30px; }
+.big .nspArt a { color: #555; }
+.big .nspArt a:active,
+.big .nspArt a:focus,
+.big .nspArt a:hover { color: #8fbe1d; }
+.big .nspArt > div { border-bottom: none!important; }
+.big .nspArt .nspImageWrapper { border: 5px solid #fff; box-shadow: 0 0 1px #888; padding: 0; background: #fff; overflow: hidden; display: inline-block; line-height: 1px; position: relative; top: 1px; left: 1px; }
+
+/* centernav suffix */
+.centernav .nspTopInterface > div { top: auto!important; bottom: 4px; left: auto!important; width: 100%; text-align: center; }
+.centernav .nspTopInterface ul { display: inline-block; float: none; margin-left: 36px; }
+.centernav .nspArts { margin-bottom: 20px; }
+.centernav .nspTopInterface .nspNext,
+.centernav .nspTopInterface .nspPrev { display: none; }

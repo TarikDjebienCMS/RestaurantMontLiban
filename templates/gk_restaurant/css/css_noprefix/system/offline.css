@@ -1,0 +1,92 @@
+/*
+#------------------------------------------------------------------------
+# Restaurant - April Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+body,
+html { margin: 0; padding: 0; min-height: 100%; }
+body { min-height: 100%; font-size: 14px; line-height: 2; color: #555; font-family: 'Expletus Sans', sans-serif; background: url('../../images/style1/bg_image.jpg') no-repeat center 60px, url('../../images/style1/bg_pattern.png') repeat 0 0; }
+a { text-decoration: none; color: #333; -webkit-transition: color 0.15s linear; -moz-transition: color 0.15s linear; -o-transition: color 0.15s linear; transition: color 0.15s linear; }
+a:hover,
+a:active,
+a:focus { color: #8fbe1d; }
+/* containers */
+#gkLogoWrap { margin-top: 20px; background: #fff; border-top: 1px solid #e0dfdf; border-bottom: 1px solid #e0dfdf; height: 70px; }
+#frame { width: 800px; padding: 50px 0 30px 0; margin: 100px auto; background: transparent url('../../images/style1/bg_paper.png') no-repeat right top; overflow: hidden; clear: both; }
+#errorboxbody { width: 320px; font-size: 11px; padding: 12px 0; margin: 0 auto; }
+#errorNumber { float: left; padding: 31px 0 0; width: 39%; }
+
+/* Logo */
+#gkLogo { padding: 0; text-indent: -999em; text-shadow: none; width: 416px; height: 103px; display: block; float: none; }
+#gkLogo img { display: block; margin: 0 auto; }
+#gkLogo.cssLogo { /* You can specify there logo size and background */ background: transparent url('../../images/style1/logo.png') no-repeat 0 center; height: 103px; width: 416px; margin: -4px auto -30px auto; }
+#gkLogo.text { text-indent: 0; color: #333; font-family: 'Norican', serif; margin: 0 auto; }
+#gkLogo.text > span { display: block; font-size: 29px; line-height: 36px; margin-top: 5px; }
+#gkLogo.text .gkLogoSlogan { display: block; font-size: 14px; line-height: 14px; }
+
+/* Other elements */
+h2 { font: 42px/92px 'Expletus Sans',sans-serif; font-weight: normal; text-align: center; color: #555; margin: 0 0 20px; padding: 0; }
+h2 > strong { color: #8fbe1d; font-size: 112px; }
+h3 { font-size: 16px; font-weight: normal; text-align: center; }
+#errorboxbody { text-align: center; margin: 75px auto 25px auto; border-top: 1px solid #ececec; }
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="url"],
+input[type="email"] { border: 1px solid #e7e7e7; border-top-color: #ccc; height: 26px; line-height: 27px; padding: 4px 8px; box-shadow: inset 0 2px 4px #eee; border-radius: 3px; font-size: 14px; color: #555; width: 225px; }
+textarea { height: auto; padding: 24px; }
+select { padding: 2px; }
+html.-moz- select { padding: 6px 2px 4px 2px; }
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus,
+input[type="email"]:focus,
+textarea:focus { background: #fffef4; }
+button,
+input.button,
+a.button,
+span.button,
+button.button,
+div.button,
+input[type="submit"],
+input[type="button"],
+.pagenav-prev a,
+.pagenav-next a { display: block; float: left; height: 28px; line-height: 28px; margin: 0 5px 2px 2px; padding: 0 8px; border: none; background: #8fbe1d; font-size: 13px; text-align: center; color: #fff; cursor: pointer; border-radius: 3px; transition: background-color 0.15s ease-out; }
+button:hover,
+input.button:hover,
+a.button:hover,
+span.button:hover,
+button.button:hover,
+div.button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.pagenav-prev a:hover,
+.pagenav-next a:hover { background: #353639; color: #fff; }
+fieldset { border: none; padding: 0;  margin: 0 auto; width: 250px; overflow: hidden; }
+p#username, 
+p#password, 
+p#remember { margin: 0 0 10px 0; float: left; width: 250px;  }
+form#form-login { margin: 0 auto; width: 700px;  }
+p#remember, #form-login ul { clear: both  }
+label { font: 16px/1.2 Arial, Helvetica, sans-serif;  display: block; margin: 0 0 10px 0; }
+div.buttons { float: right;  margin: -15px 0 0 0;  }
+input[type="checkbox"] { margin: 5px 5px 0 0; }
+#remember { float: left; width: auto; }
+label[for="remember"] { float: left; line-height: 21px; }
+
+
+
+/* messages */
+#system-message-container { text-align: center; margin: 0 0 20px 0; }
+#system-message { display: inline-block; }
+#system-message dt { display: none; }
+#system-message dd { margin: 0; padding: 0; }
+#system-message dd ul { padding: 0; list-style-type: none; width: auto; margin: 0 auto; padding: 0; }
+#system-message dd.error { color: #cb4900; }

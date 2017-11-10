@@ -1,0 +1,20 @@
+{
+	"positions": {
+		"top1": ["top1", "top2", "top3", "top4", "top5", "top6"],
+		"top2": ["top7", "top8", "top9", "top10", "top11", "top12"],
+		"main": ["left", "inset1", "mainbody", "inset2", "right"],
+		"user1": ["user1", "user2", "user3", "user4", "user5", "user6"],
+		"user2": ["user7", "user8", "user9", "user10", "user11", "user12"],
+		"bottom1": ["bottom1", "bottom2", "bottom3", "bottom4", "bottom5", "bottom6"],
+		"bottom2": ["bottom7", "bottom8", "bottom9", "bottom10", "bottom11", "bottom12"]
+	},
+	"default": {
+		"top1": [17, 17, 16, 16, 17, 17],
+		"top2": [17, 17, 16, 16, 17, 17],
+		"main": [20, 10, 40, 10, 20],
+		"user1": [17, 17, 16, 16, 17, 17],
+		"user2": [17, 17, 16, 16, 17, 17],
+		"bottom1": [17, 17, 16, 16, 17, 17],
+		"bottom2": [17, 17, 16, 16, 17, 17]
+	}
+}
